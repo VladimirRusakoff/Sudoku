@@ -1,0 +1,33 @@
+.board {
+  display: inline-block;
+  border: 2px solid #000;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cell:nth-child(3n) {
+  border-right: 2px solid #000;
+}
+
+.cell.initial {
+  background-color: #d8d9f1;
+  font-weight: bold;
+}
+
+.row:nth-child(3n) .cell {
+  border-bottom: 2px solid #000;
+}
