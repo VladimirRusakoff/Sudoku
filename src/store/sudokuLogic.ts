@@ -92,7 +92,7 @@ function getRandomSudoku(): number[][] {
     if (methodOfRandoming === 0) {
         // заполняем рандомную строку
         const randRow = Math.floor(Math.random() * 8);
-        Array(9).fill(1).forEach((elem, ind) => {
+        Array(9).fill(1).forEach((ind) => {
             let numb = Math.floor(Math.random() * 8) + 1;
             for(let k = 0; k < 9; k++) {
                 if (isValidPlace(puzzle, randRow, ind, numb)) {
@@ -109,7 +109,7 @@ function getRandomSudoku(): number[][] {
         } else if (methodOfRandoming === 1) {
         // заполняем рандомную колонку
         const randCol = Math.floor(Math.random() * 8);
-        Array(9).fill(1).forEach((elem, ind) => {
+        Array(9).fill(1).forEach((ind) => {
             let numb = Math.floor(Math.random() * 8) + 1;
             for (let k = 0; k < 9; k++) {
                 if (isValidPlace(puzzle, ind, randCol, numb)) {
@@ -125,7 +125,7 @@ function getRandomSudoku(): number[][] {
         })
         } else { // if (methodOfRandoming === 2)
             // заполняем рандомными элементами по диагонали
-            Array(9).fill(1).forEach((elem, ind) => {
+            Array(9).fill(1).forEach((ind) => {
                 let numb = Math.floor(Math.random() * 8) + 1;
                 for (let k = 0; k < 9; k++) {
                     if (isValidPlace(puzzle, ind, ind, numb)) {
