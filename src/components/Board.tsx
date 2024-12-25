@@ -4,7 +4,6 @@ import Cell from './Cell';
 interface BoardProps {
     gameArray: number[][];
     initArray: number[][];
-    solvedArray: number[][];
     onCellChange: (rowIndex: number, colIndex: number, value: string) => void;
 }
 
