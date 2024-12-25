@@ -10,7 +10,7 @@ const Game = (props: IProps) => {
     // const {gameArray} = useSelector((state) => state);
     // const dispatch = useDispatch();
     
-    const {gameArray, initArray, solvedArray, handleChangeCell} = useGame(props.level);
+    const {gameArray, initArray, handleChangeCell} = useGame(props.level);
     
     /*const checkSudoku = () => {
         for (let i = 0; i < gameArray.length; i++) {
